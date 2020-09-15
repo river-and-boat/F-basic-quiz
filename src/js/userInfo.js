@@ -1,8 +1,8 @@
-const url = "http://localhost:8080/users/";
+const urlUserBase = "http://localhost:8080/users/";
 const getUserInfo = async (userId) => {
   let result = {};
   try {
-    const response = await fetch(url + userId);
+    const response = await fetch(urlUserBase + userId);
     if (response.status === 200) {
       result = await response.json();
     }

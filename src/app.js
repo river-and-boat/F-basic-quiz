@@ -1,4 +1,5 @@
 import "./style/index.scss";
-import { renderUserInfo } from "./js/render";
+import { renderEducationInfo, renderUserInfo } from "./js/render";
 
 renderUserInfo(1);
+renderEducationInfo(1);
