@@ -12,6 +12,9 @@ const renderUserInfo = async (userId) => {
 
 const renderEducationInfo = async (userId) => {
   const educationsInfo = await getEducationInfo(userId);
+  if (JSON.stringify(educationsInfo) === "{}") {
+    return;
+  }
   educationsInfo.forEach((educationInfo) => {
     $(".education-experience").append(
       `<li class='educations'>` +
