@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+@import "header";
+@import "article";
 
 body {
   height: 100vh;
@@ -16,44 +18,9 @@ body {
   margin-top: 8%;
 }
 
-.username,
-.age {
-  display: inline;
-}
-
-.self-intro-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1 {
-    font-size: 30px;
-  }
-}
-
-.avator {
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  margin: -25% 41% 15px;
-}
-
 .dividing-line {
   width: 96%;
   height: 5px;
   border-width: 0px;
   background-color: $body-bg;
-}
-
-.self-intro-body {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  margin-left: 2%;
-  h2 {
-    color: $primary-color;
-  }
-}
-
-.about-me-body {
-  font-size: 15px;
 }
