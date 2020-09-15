@@ -13,13 +13,6 @@ const renderUserInfo = async (userId) => {
 const renderEducationInfo = async (userId) => {
   const educationsInfo = await getEducationInfo(userId);
   educationsInfo.forEach((educationInfo) => {
-    // <li class="educations">
-    //   <span class="year">1985</span>
-    //   <div class="describeContent">
-    //     <h4 class="title">This is education 1 title</h4>
-    //     <p class="content">This is education 1 content</p>
-    //   </div>
-    // </li>
     $(".education-experience").append(
       `<li class='educations'>` +
         `<span class='year'>${educationInfo.year}</span>` +
