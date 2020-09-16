@@ -12,6 +12,7 @@ const renderUserInfo = async (userId) => {
 
 const renderEducationInfo = async (userId) => {
   const educationsInfo = await getEducationInfo(userId);
+  // TODO feedback: 不建议用这种方式判空
   if (JSON.stringify(educationsInfo) === "{}") {
     return;
   }
@@ -19,6 +20,7 @@ const renderEducationInfo = async (userId) => {
     $(".education-experience").append(
       `<li class='educations'>` +
         `<span class='year'>${educationInfo.year}</span>` +
+        // TODO feedback: class命名规范不建议用驼峰，使用-
         `<div class='describeContent'>` +
         `<h4 class='title'>${educationInfo.title}</h4>` +
         `<p class='content'>${educationInfo.description}</p>` +

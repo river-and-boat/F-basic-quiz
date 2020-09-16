@@ -3,6 +3,7 @@ const urlEducationSuffix = "/educations";
 const getEducationInfo = async (userId) => {
   let result = {};
   try {
+    // TODO feedback: 使用ES6语法
     const response = await fetch(
       urlEducationBase + userId + urlEducationSuffix
     );
